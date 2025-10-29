@@ -1,11 +1,13 @@
 const prompt = require("prompt-sync")();
 
-let num = prompt("Ingrese el numero ");
+let num = Number(prompt("Ingrese el numero "));
  
-if (num %2 == 0){
-    console.log("Es par ");
+if (num == 0){
+    console.log("Es cero ");
 }
-else{
-    console.log("No es par ");
-    
+ else if(num>0) {
+    console.log("Es Positivo ");
+}
+ else{
+    console.log("Es negativo ");
 }
