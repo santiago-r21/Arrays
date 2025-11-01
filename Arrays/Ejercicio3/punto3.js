@@ -17,13 +17,14 @@ function buscar(entrada) {
     if (cont==1){
         console.log("el producto si existe");
     }else{
-        console.log("el producto no esta en el inventario");
+        return null
         
     };
 }
 
 let entrada = prompt("Ingrese el producto ");
-buscar(entrada)
+console.log(buscar(entrada));
+
  
 
 
